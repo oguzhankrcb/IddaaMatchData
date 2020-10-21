@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="iddaasim_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="matches">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="evsahibi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="konuk" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="iddaakod" Type="bigint" Nullable="false" />
+          <Property Name="startDate" Type="date" Nullable="false" />
+          <Property Name="startTime" Type="time" Precision="0" Nullable="false" />
+          <Property Name="ms1" Type="float" Nullable="false" />
+          <Property Name="ms2" Type="float" Nullable="false" />
+          <Property Name="msx" Type="float" Nullable="false" />
+          <Property Name="kgvar" Type="float" Nullable="false" />
+          <Property Name="kgyok" Type="float" Nullable="false" />
+          <Property Name="cifte1x" Type="float" Nullable="false" />
+          <Property Name="cifte12" Type="float" Nullable="false" />
+          <Property Name="cifte2x" Type="float" Nullable="false" />
+          <Property Name="ilkg1" Type="float" Nullable="false" />
+          <Property Name="ilkg2" Type="float" Nullable="false" />
+          <Property Name="ilkgolmaz" Type="float" Nullable="false" />
+          <Property Name="alt05" Type="float" Nullable="false" />
+          <Property Name="ust05" Type="float" Nullable="false" />
+          <Property Name="alt15" Type="float" Nullable="false" />
+          <Property Name="ust15" Type="float" Nullable="false" />
+          <Property Name="alt25" Type="float" Nullable="false" />
+          <Property Name="ust25" Type="float" Nullable="false" />
+          <Property Name="alt35" Type="float" Nullable="false" />
+          <Property Name="ust35" Type="float" Nullable="false" />
+          <Property Name="alt45" Type="float" Nullable="false" />
+          <Property Name="ust45" Type="float" Nullable="false" />
+          <Property Name="tgol01" Type="float" Nullable="false" />
+          <Property Name="tgol23" Type="float" Nullable="false" />
+          <Property Name="tgol45" Type="float" Nullable="false" />
+          <Property Name="tgol6arti" Type="float" Nullable="false" />
+          <Property Name="ilkyari1" Type="float" Nullable="false" />
+          <Property Name="ilkyari2" Type="float" Nullable="false" />
+          <Property Name="ilkyarix" Type="float" Nullable="false" />
+          <Property Name="ikinciyari1" Type="float" Nullable="false" />
+          <Property Name="ikinciyari2" Type="float" Nullable="false" />
+          <Property Name="ikinciyarix" Type="float" Nullable="false" />
+          <Property Name="ilkkorner1" Type="float" Nullable="false" />
+          <Property Name="ilkkorner2" Type="float" Nullable="false" />
+          <Property Name="ilkkorner0" Type="float" Nullable="false" />
+          <Property Name="kirmizikartvar" Type="float" Nullable="false" />
+          <Property Name="kirmizikartyok" Type="float" Nullable="false" />
+          <Property Name="mskor10" Type="float" Nullable="false" />
+          <Property Name="mskor20" Type="float" Nullable="false" />
+          <Property Name="mskor21" Type="float" Nullable="false" />
+          <Property Name="mskor30" Type="float" Nullable="false" />
+          <Property Name="mskor31" Type="float" Nullable="false" />
+          <Property Name="mskor32" Type="float" Nullable="false" />
+          <Property Name="mskor40" Type="float" Nullable="false" />
+          <Property Name="mskor41" Type="float" Nullable="false" />
+          <Property Name="mskor42" Type="float" Nullable="false" />
+          <Property Name="mskor50" Type="float" Nullable="false" />
+          <Property Name="mskor51" Type="float" Nullable="false" />
+          <Property Name="mskor60" Type="float" Nullable="false" />
+          <Property Name="mskor00" Type="float" Nullable="false" />
+          <Property Name="mskor11" Type="float" Nullable="false" />
+          <Property Name="mskor22" Type="float" Nullable="false" />
+          <Property Name="mskor33" Type="float" Nullable="false" />
+          <Property Name="mskor01" Type="float" Nullable="false" />
+          <Property Name="mskor02" Type="float" Nullable="false" />
+          <Property Name="mskor12" Type="float" Nullable="false" />
+          <Property Name="mskor03" Type="float" Nullable="false" />
+          <Property Name="mskor13" Type="float" Nullable="false" />
+          <Property Name="mskor23" Type="float" Nullable="false" />
+          <Property Name="mskor04" Type="float" Nullable="false" />
+          <Property Name="mskor14" Type="float" Nullable="false" />
+          <Property Name="mskor24" Type="float" Nullable="false" />
+          <Property Name="mskor05" Type="float" Nullable="false" />
+          <Property Name="mskor15" Type="float" Nullable="false" />
+          <Property Name="mskor06" Type="float" Nullable="false" />
+          <Property Name="mskorothers" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="iddaasim_dbModelStoreContainer">
+          <EntitySet Name="matches" EntityType="Self.matches" Schema="*******" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="iddaasim_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="iddaasim_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="matches" EntityType="iddaasim_dbModel.match" />
+        </EntityContainer>
+        <EntityType Name="match">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="evsahibi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="konuk" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="iddaakod" Type="Int64" Nullable="false" />
+          <Property Name="startDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="startTime" Type="Time" Nullable="false" Precision="0" />
+          <Property Name="ms1" Type="Double" Nullable="false" />
+          <Property Name="ms2" Type="Double" Nullable="false" />
+          <Property Name="msx" Type="Double" Nullable="false" />
+          <Property Name="kgvar" Type="Double" Nullable="false" />
+          <Property Name="kgyok" Type="Double" Nullable="false" />
+          <Property Name="cifte1x" Type="Double" Nullable="false" />
+          <Property Name="cifte12" Type="Double" Nullable="false" />
+          <Property Name="cifte2x" Type="Double" Nullable="false" />
+          <Property Name="ilkg1" Type="Double" Nullable="false" />
+          <Property Name="ilkg2" Type="Double" Nullable="false" />
+          <Property Name="ilkgolmaz" Type="Double" Nullable="false" />
+          <Property Name="alt05" Type="Double" Nullable="false" />
+          <Property Name="ust05" Type="Double" Nullable="false" />
+          <Property Name="alt15" Type="Double" Nullable="false" />
+          <Property Name="ust15" Type="Double" Nullable="false" />
+          <Property Name="alt25" Type="Double" Nullable="false" />
+          <Property Name="ust25" Type="Double" Nullable="false" />
+          <Property Name="alt35" Type="Double" Nullable="false" />
+          <Property Name="ust35" Type="Double" Nullable="false" />
+          <Property Name="alt45" Type="Double" Nullable="false" />
+          <Property Name="ust45" Type="Double" Nullable="false" />
+          <Property Name="tgol01" Type="Double" Nullable="false" />
+          <Property Name="tgol23" Type="Double" Nullable="false" />
+          <Property Name="tgol45" Type="Double" Nullable="false" />
+          <Property Name="tgol6arti" Type="Double" Nullable="false" />
+          <Property Name="ilkyari1" Type="Double" Nullable="false" />
+          <Property Name="ilkyari2" Type="Double" Nullable="false" />
+          <Property Name="ilkyarix" Type="Double" Nullable="false" />
+          <Property Name="ikinciyari1" Type="Double" Nullable="false" />
+          <Property Name="ikinciyari2" Type="Double" Nullable="false" />
+          <Property Name="ikinciyarix" Type="Double" Nullable="false" />
+          <Property Name="ilkkorner1" Type="Double" Nullable="false" />
+          <Property Name="ilkkorner2" Type="Double" Nullable="false" />
+          <Property Name="ilkkorner0" Type="Double" Nullable="false" />
+          <Property Name="kirmizikartvar" Type="Double" Nullable="false" />
+          <Property Name="kirmizikartyok" Type="Double" Nullable="false" />
+          <Property Name="mskor10" Type="Double" Nullable="false" />
+          <Property Name="mskor20" Type="Double" Nullable="false" />
+          <Property Name="mskor21" Type="Double" Nullable="false" />
+          <Property Name="mskor30" Type="Double" Nullable="false" />
+          <Property Name="mskor31" Type="Double" Nullable="false" />
+          <Property Name="mskor32" Type="Double" Nullable="false" />
+          <Property Name="mskor40" Type="Double" Nullable="false" />
+          <Property Name="mskor41" Type="Double" Nullable="false" />
+          <Property Name="mskor42" Type="Double" Nullable="false" />
+          <Property Name="mskor50" Type="Double" Nullable="false" />
+          <Property Name="mskor51" Type="Double" Nullable="false" />
+          <Property Name="mskor60" Type="Double" Nullable="false" />
+          <Property Name="mskor00" Type="Double" Nullable="false" />
+          <Property Name="mskor11" Type="Double" Nullable="false" />
+          <Property Name="mskor22" Type="Double" Nullable="false" />
+          <Property Name="mskor33" Type="Double" Nullable="false" />
+          <Property Name="mskor01" Type="Double" Nullable="false" />
+          <Property Name="mskor02" Type="Double" Nullable="false" />
+          <Property Name="mskor12" Type="Double" Nullable="false" />
+          <Property Name="mskor03" Type="Double" Nullable="false" />
+          <Property Name="mskor13" Type="Double" Nullable="false" />
+          <Property Name="mskor23" Type="Double" Nullable="false" />
+          <Property Name="mskor04" Type="Double" Nullable="false" />
+          <Property Name="mskor14" Type="Double" Nullable="false" />
+          <Property Name="mskor24" Type="Double" Nullable="false" />
+          <Property Name="mskor05" Type="Double" Nullable="false" />
+          <Property Name="mskor15" Type="Double" Nullable="false" />
+          <Property Name="mskor06" Type="Double" Nullable="false" />
+          <Property Name="mskorothers" Type="Double" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="iddaasim_dbModelStoreContainer" CdmEntityContainer="iddaasim_dbEntities">
+          <EntitySetMapping Name="matches">
+            <EntityTypeMapping TypeName="iddaasim_dbModel.match">
+              <MappingFragment StoreEntitySet="matches">
+                <ScalarProperty Name="mskorothers" ColumnName="mskorothers" />
+                <ScalarProperty Name="mskor06" ColumnName="mskor06" />
+                <ScalarProperty Name="mskor15" ColumnName="mskor15" />
+                <ScalarProperty Name="mskor05" ColumnName="mskor05" />
+                <ScalarProperty Name="mskor24" ColumnName="mskor24" />
+                <ScalarProperty Name="mskor14" ColumnName="mskor14" />
+                <ScalarProperty Name="mskor04" ColumnName="mskor04" />
+                <ScalarProperty Name="mskor23" ColumnName="mskor23" />
+                <ScalarProperty Name="mskor13" ColumnName="mskor13" />
+                <ScalarProperty Name="mskor03" ColumnName="mskor03" />
+                <ScalarProperty Name="mskor12" ColumnName="mskor12" />
+                <ScalarProperty Name="mskor02" ColumnName="mskor02" />
+                <ScalarProperty Name="mskor01" ColumnName="mskor01" />
+                <ScalarProperty Name="mskor33" ColumnName="mskor33" />
+                <ScalarProperty Name="mskor22" ColumnName="mskor22" />
+                <ScalarProperty Name="mskor11" ColumnName="mskor11" />
+                <ScalarProperty Name="mskor00" ColumnName="mskor00" />
+                <ScalarProperty Name="mskor60" ColumnName="mskor60" />
+                <ScalarProperty Name="mskor51" ColumnName="mskor51" />
+                <ScalarProperty Name="mskor50" ColumnName="mskor50" />
+                <ScalarProperty Name="mskor42" ColumnName="mskor42" />
+                <ScalarProperty Name="mskor41" ColumnName="mskor41" />
+                <ScalarProperty Name="mskor40" ColumnName="mskor40" />
+                <ScalarProperty Name="mskor32" ColumnName="mskor32" />
+                <ScalarProperty Name="mskor31" ColumnName="mskor31" />
+                <ScalarProperty Name="mskor30" ColumnName="mskor30" />
+                <ScalarProperty Name="mskor21" ColumnName="mskor21" />
+                <ScalarProperty Name="mskor20" ColumnName="mskor20" />
+                <ScalarProperty Name="mskor10" ColumnName="mskor10" />
+                <ScalarProperty Name="kirmizikartyok" ColumnName="kirmizikartyok" />
+                <ScalarProperty Name="kirmizikartvar" ColumnName="kirmizikartvar" />
+                <ScalarProperty Name="ilkkorner0" ColumnName="ilkkorner0" />
+                <ScalarProperty Name="ilkkorner2" ColumnName="ilkkorner2" />
+                <ScalarProperty Name="ilkkorner1" ColumnName="ilkkorner1" />
+                <ScalarProperty Name="ikinciyarix" ColumnName="ikinciyarix" />
+                <ScalarProperty Name="ikinciyari2" ColumnName="ikinciyari2" />
+                <ScalarProperty Name="ikinciyari1" ColumnName="ikinciyari1" />
+                <ScalarProperty Name="ilkyarix" ColumnName="ilkyarix" />
+                <ScalarProperty Name="ilkyari2" ColumnName="ilkyari2" />
+                <ScalarProperty Name="ilkyari1" ColumnName="ilkyari1" />
+                <ScalarProperty Name="tgol6arti" ColumnName="tgol6arti" />
+                <ScalarProperty Name="tgol45" ColumnName="tgol45" />
+                <ScalarProperty Name="tgol23" ColumnName="tgol23" />
+                <ScalarProperty Name="tgol01" ColumnName="tgol01" />
+                <ScalarProperty Name="ust45" ColumnName="ust45" />
+                <ScalarProperty Name="alt45" ColumnName="alt45" />
+                <ScalarProperty Name="ust35" ColumnName="ust35" />
+                <ScalarProperty Name="alt35" ColumnName="alt35" />
+                <ScalarProperty Name="ust25" ColumnName="ust25" />
+                <ScalarProperty Name="alt25" ColumnName="alt25" />
+                <ScalarProperty Name="ust15" ColumnName="ust15" />
+                <ScalarProperty Name="alt15" ColumnName="alt15" />
+                <ScalarProperty Name="ust05" ColumnName="ust05" />
+                <ScalarProperty Name="alt05" ColumnName="alt05" />
+                <ScalarProperty Name="ilkgolmaz" ColumnName="ilkgolmaz" />
+                <ScalarProperty Name="ilkg2" ColumnName="ilkg2" />
+                <ScalarProperty Name="ilkg1" ColumnName="ilkg1" />
+                <ScalarProperty Name="cifte2x" ColumnName="cifte2x" />
+                <ScalarProperty Name="cifte12" ColumnName="cifte12" />
+                <ScalarProperty Name="cifte1x" ColumnName="cifte1x" />
+                <ScalarProperty Name="kgyok" ColumnName="kgyok" />
+                <ScalarProperty Name="kgvar" ColumnName="kgvar" />
+                <ScalarProperty Name="msx" ColumnName="msx" />
+                <ScalarProperty Name="ms2" ColumnName="ms2" />
+                <ScalarProperty Name="ms1" ColumnName="ms1" />
+                <ScalarProperty Name="startTime" ColumnName="startTime" />
+                <ScalarProperty Name="startDate" ColumnName="startDate" />
+                <ScalarProperty Name="iddaakod" ColumnName="iddaakod" />
+                <ScalarProperty Name="konuk" ColumnName="konuk" />
+                <ScalarProperty Name="evsahibi" ColumnName="evsahibi" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
